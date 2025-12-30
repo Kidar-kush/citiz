@@ -1,0 +1,69 @@
+ /* login page cascade */
+.head-box{
+    /* border: 1px solid black; */
+    padding: 5px;
+display: flex;
+gap: 10px;
+justify-content: space-between;
+}
+.welcome-box{
+background:#008555 ;
+color: #fff;
+padding: 25px;
+}
+.welcome{
+    padding-top: 25px;
+}
+.form-box{
+    border:1px solid black;
+    padding: 10px;
+    
+}
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.user-info input{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.remember{
+     gap: 10px;
+    padding: 15px;
+}
+.user-info2{
+     display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.user-bttn button img{
+    width: 5%;
+}
+.user-bttn button{
+    background:#d93d00 ;
+    border: 1px solid rgb(55, 54, 54);
+    cursor: pointer;
+}
+.user-bttn{
+    align-items: center;
+    text-align: center;
+}
+.user-text p{
+    font-style: italic;
+    color:#757474!important ;
+}
+
+@media (max-width: 768px){
+    form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+}
