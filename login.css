@@ -1,4 +1,12 @@
  /* login page cascade */
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
 .head-box{
     /* border: 1px solid black; */
     padding: 5px;
@@ -10,6 +18,7 @@ justify-content: space-between;
 background:#008555 ;
 color: #fff;
 padding: 25px;
+line-height: 1.9rem;
 }
 .welcome{
     padding-top: 25px;
@@ -17,6 +26,7 @@ padding: 25px;
 .form-box{
     border:1px solid black;
     padding: 10px;
+    line-height: 2.5rem;
     
 }
 form{
@@ -50,14 +60,91 @@ form{
     background:#d93d00 ;
     border: 1px solid rgb(55, 54, 54);
     cursor: pointer;
+    width: 100%;
+    color: whitesmoke;
+}
+.user-bttn a{
+    
+   padding: 15px;
+}
+.user-bttn a:hover{
+    background: #d4d1d1;
+   padding: 15px;
+   width: 100%;
 }
 .user-bttn{
     align-items: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 .user-text p{
     font-style: italic;
     color:#757474!important ;
+}
+
+/* joint */
+
+.about-box{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.5rem;
+}
+.nav-end{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+.nav-end ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-end ul li {
+    padding: 5px;
+}
+.nav-end ul li a:hover{
+    text-decoration: underline;
+    color: rgb(110, 110, 236);
+}
+.about-img{
+    padding: 35px;
+}
+.social-box{
+    background:#f4f2f2 ;
+    padding: 20px;
+    
+}
+.social-img{
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+.social-img img{
+    width: 5%;
+}
+.social-nav{
+    padding: 5px;
+color: lightgray;
+}
+.social-nav nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    list-style: none;
+    padding: 5px;
+    justify-content: space-between;
+    
+}
+.social-nav nav ul a{
+ color: #757474!important;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.copy-text{
+    font-size: medium;
+     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 @media (max-width: 768px){
@@ -65,5 +152,36 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+/* joint */
+
+   .about-box{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5rem;
+}
+.social-nav nav ul a{
+ color: #757474!important;
+ font-size: 8px;
+ 
+ 
+ font-family: Arial, Helvetica, sans-serif;
+}
+.social-nav nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style: none;
+    padding: 5px;
+    justify-content: space-around;
+    
+}
+.copy-text{
+    font-size: small;
+     font-family: Arial, Helvetica, sans-serif;
+
 }
 }
